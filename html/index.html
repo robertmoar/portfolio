@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Robert Mora — Software Engineer specialising in IoT, bare-metal programming and full-stack web development." />
+  <title>Robert Mora — Software Engineer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="mobile-indicator" id="mobileIndicator">
+    <span class="mobile-section-name" id="mobileSectionName">About</span>
+  </div>
+
+  <div class="layout">
+
+    <!-- ── LEFT PANEL ── -->
+    <aside class="left" aria-label="Profile">
+      <svg class="circuit-bg" viewBox="0 0 400 600" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M20 100 H120 V200 H220 V300" stroke="#FFD369" stroke-width="1.5" class="trace" style="animation-delay:0s"/>
+        <path d="M380 50 V150 H280 V250 H180" stroke="#FFD369" stroke-width="1.5" class="trace" style="animation-delay:0.6s"/>
+        <path d="M50 400 H150 V480 H300 V550" stroke="#FFD369" stroke-width="1.5" class="trace" style="animation-delay:1.2s"/>
+        <circle cx="120" cy="200" r="3" fill="#FFD369"/>
+        <circle cx="220" cy="300" r="3" fill="#FFD369"/>
+        <circle cx="280" cy="250" r="3" fill="#FFD369"/>
+        <circle cx="150" cy="480" r="3" fill="#FFD369"/>
+      </svg>
+
+      <div class="left-inner">
+        <div>
+          <div class="lang-toggle">
+            <span class="lang-btn active" aria-current="true">EN</span>
+            <a href="spanish.html" class="lang-btn">ES</a>
+          </div>
+
+          <h1 class="name">Robert<br>Mora</h1>
+          <p class="role">Software Engineer</p>
+          <p class="bio">
+            I love to build software that bridges the digital and physical worlds.
+            IoT, bare-metal programming, and full-stack development —
+            watching code bring hardware to life.
+          </p>
+
+          <nav aria-label="Page sections">
+            <ul class="nav" id="siteNav">
+              <li class="nav-item active" data-target="about">
+                <a href="#about">
+                  <span class="nav-line" aria-hidden="true"></span>
+                  <span class="nav-label">About</span>
+                </a>
+              </li>
+              <li class="nav-item" data-target="projects">
+                <a href="#projects">
+                  <span class="nav-line" aria-hidden="true"></span>
+                  <span class="nav-label">Projects</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div>
+          <nav class="socials" aria-label="Contact and social links">
+            <a href="mailto:robert@robertmora.dev" class="social-link" aria-label="Send email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+              mail
+            </a>
+            <a href="https://github.com/robertmoar" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              github
+            </a>
+            <a href="https://linkedin.com/in/robertmora" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+              linkedin
+            </a>
+          </nav>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ── RIGHT PANEL ── -->
+    <main class="right">
+
+      <section class="section" id="about" aria-labelledby="about-heading">
+        <p class="section-label" id="about-heading">About</p>
+        <div class="about-text">
+          <p>
+            <span class="about-highlight">I'm a 47-year-old making a deliberate shift</span> — from
+            a career in vertical access and construction work into software engineering.
+            That background taught me precision, problem-solving under pressure, and the
+            satisfaction of building something with your own hands. I brought all of that
+            into coding.
+          </p>
+          <p>
+            My passion lives at the intersection of hardware and software.
+            <span class="about-highlight">IoT, bare-metal programming, embedded systems</span> —
+            the moment a microcontroller responds to code you just wrote is the same feeling
+            as a structure coming together on a jobsite. Physical. Real. Yours.
+          </p>
+          <p>
+            Currently finishing my Web Application Development degree (DAW) and studying
+            Computer Science in parallel — actively looking for my
+            <span class="about-highlight">first role in software engineering.</span>
+          </p>
+          <div class="tags">
+            <span class="tag">Go</span>
+            <span class="tag">C / C++</span>
+            <span class="tag">ESP32</span>
+            <span class="tag">IoT</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Docker</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">React</span>
+            <span class="tag">Nginx</span>
+            <span class="tag">Bare-metal</span>
+            <span class="tag">Java</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-heading">
+        <p class="section-label" id="projects-heading">Projects</p>
+
+        <a class="project-card" href="https://github.com/robertmoar/invernadero" target="_blank" rel="noopener noreferrer" aria-label="Automated Greenhouse project on GitHub">
+          <div class="project-img">
+            <span class="project-img-icon" aria-hidden="true">🌱</span>
+          </div>
+          <div class="project-content">
+            <p class="project-title">
+              Automated Greenhouse
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </p>
+            <p class="project-desc">
+              An IoT greenhouse controller built on an ESP32. Monitors temperature,
+              humidity, and soil moisture — automatically managing irrigation and
+              ventilation without human intervention.
+            </p>
+            <div class="project-tags">
+              <span class="tag">ESP32</span>
+              <span class="tag">C++</span>
+              <span class="tag">IoT</span>
+              <span class="tag">MQTT</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="project-card" href="https://github.com/robertmoar/javaCalc" target="_blank" rel="noopener noreferrer" aria-label="Java Calculator project on GitHub">
+          <div class="project-img">
+            <span class="project-img-icon" aria-hidden="true">⌗</span>
+          </div>
+          <div class="project-content">
+            <p class="project-title">
+              Calculator — Java
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </p>
+            <p class="project-desc">
+              A calculator application built in Java. A foundational project
+              exploring object-oriented design, UI logic, and the fundamentals
+              of building desktop software from scratch.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">OOP</span>
+            </div>
+          </div>
+        </a>
+
+      </section>
+
+    </main>
+  </div>
+
+  <script>
+    const sections = ['about', 'projects'];
+    const navItems = document.querySelectorAll('#siteNav .nav-item');
+    const mobileName = document.getElementById('mobileSectionName');
+    const labels = { about: 'About', projects: 'Projects' };
+
+    function getActive() {
+      const scrollY = window.scrollY + 120;
+      let current = sections[0];
+      sections.forEach(id => {
+        const el = document.getElementById(id);
+        if (el && el.offsetTop <= scrollY) current = id;
+      });
+      return current;
+    }
+
+    function updateNav() {
+      const current = getActive();
+      navItems.forEach(item => {
+        item.classList.toggle('active', item.dataset.target === current);
+      });
+      if (mobileName) mobileName.textContent = labels[current] || '';
+    }
+
+    window.addEventListener('scroll', updateNav, { passive: true });
+    updateNav();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg:      #222831;
+  --surface: #393E46;
+  --gold:    #FFD369;
+  --text:    #EEEEEE;
+  --green:   #A8DF8E;
+  --muted:   #8a9099;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body:    'Inter', sans-serif;
+  --font-mono:    'JetBrains Mono', monospace;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  min-height: 100vh;
+  line-height: 1.7;
+}
+
+/* ── LAYOUT ── */
+.layout {
+  display: flex;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ── LEFT PANEL ── */
+.left {
+  width: 38%;
+  padding: 4rem 3rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.circuit-bg {
+  position: absolute;
+  inset: 0;
+  opacity: 0.07;
+  pointer-events: none;
+}
+
+.left-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.08;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.role {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--gold);
+  margin-top: 0.6rem;
+}
+
+.bio {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.75;
+  margin-top: 1.2rem;
+  max-width: 300px;
+}
+
+/* ── NAV ── */
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 2.5rem;
+  list-style: none;
+}
+
+.nav-item a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  padding: 0.25rem 0;
+  transition: all 0.2s;
+}
+
+.nav-line {
+  width: 2rem;
+  height: 1px;
+  background: var(--muted);
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.nav-label {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  transition: all 0.2s;
+}
+
+.nav-item a:hover .nav-line,
+.nav-item.active .nav-line {
+  width: 3.5rem;
+  background: var(--gold);
+}
+
+.nav-item a:hover .nav-label,
+.nav-item.active .nav-label {
+  color: var(--text);
+}
+
+/* ── LANG TOGGLE ── */
+.lang-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.lang-btn {
+  background: none;
+  border: 1px solid var(--surface);
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  padding: 0.25rem 0.65rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 3px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.lang-btn.active {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.lang-btn:hover {
+  border-color: var(--text);
+  color: var(--text);
+}
+
+/* ── SOCIALS ── */
+.socials {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.social-link:hover { color: var(--gold); }
+
+.social-link svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* ── RIGHT PANEL ── */
+.right {
+  flex: 1;
+  padding: 4rem 3rem;
+}
+
+/* ── SECTIONS ── */
+.section {
+  margin-bottom: 5rem;
+  scroll-margin-top: 2rem;
+}
+
+.section-label {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.75rem;
+}
+
+/* ── ABOUT ── */
+.about-text {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: var(--muted);
+  max-width: 540px;
+}
+
+.about-text p + p { margin-top: 1rem; }
+
+.about-highlight { color: var(--text); }
+
+/* ── TAGS ── */
+.tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--green);
+  background: rgba(168, 223, 142, 0.1);
+  border: 1px solid rgba(168, 223, 142, 0.2);
+  padding: 0.15rem 0.55rem;
+  border-radius: 3px;
+  margin: 0.15rem 0.1rem;
+}
+
+.tags { margin-top: 1.25rem; }
+
+/* ── PROJECT CARDS ── */
+.project-card {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+  margin-bottom: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card:hover {
+  background: var(--surface);
+  border-color: rgba(255, 211, 105, 0.15);
+}
+
+.project-img {
+  width: 120px;
+  height: 80px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-img-icon {
+  font-size: 1.8rem;
+  opacity: 0.5;
+}
+
+.project-content { flex: 1; }
+
+.project-title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 0.2s;
+}
+
+.project-card:hover .project-title { color: var(--gold); }
+
+.project-arrow {
+  font-size: 0.8rem;
+  color: var(--gold);
+  transition: transform 0.2s;
+  display: inline-block;
+}
+
+.project-card:hover .project-arrow { transform: translate(2px, -2px); }
+
+.project-desc {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-top: 0.4rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.65rem;
+}
+
+/* ── MOBILE NAV INDICATOR ── */
+.mobile-indicator {
+  display: none;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(34, 40, 49, 0.96);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 211, 105, 0.12);
+}
+
+.mobile-section-name {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* ── CIRCUIT ANIMATION ── */
+@keyframes trace-draw {
+  to { stroke-dashoffset: 0; }
+}
+
+.trace {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: trace-draw 3s ease forwards;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .layout { flex-direction: column; }
+
+  .left {
+    width: 100%;
+    height: auto;
+    position: static;
+    padding: 2.5rem 1.5rem 1.5rem;
+  }
+
+  .bio { max-width: 100%; }
+  .nav { display: none; }
+  .mobile-indicator { display: block; }
+
+  .right { padding: 0 1.5rem 3rem; }
+
+  .section { margin-bottom: 3.5rem; }
+
+  .project-card { flex-direction: column; }
+
+  .project-img {
+    width: 100%;
+    height: 180px;
+  }
+}
