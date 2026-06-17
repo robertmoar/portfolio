@@ -6,6 +6,7 @@
   <meta name="description" content="Robert Mora — Software Engineer specialising in IoT, bare-metal programming and full-stack web development." />
   <title>Robert Mora</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="../img/favicon.png" />
 </head>
 <body>
 
@@ -143,7 +144,8 @@
 
         <a class="project-card" href="https://github.com/robertmoar/invernadero" target="_blank" rel="noopener noreferrer" aria-label="Automated Greenhouse project on GitHub">
           <div class="project-img">
-            <span class="project-img-icon" aria-hidden="true">🌱</span>
+            <!--<span class="project-img-icon" aria-hidden="true">🌱</span>-->
+            <img src="../img/cyd.png" alt="Cheap Yellow Display">
           </div>
           <div class="project-content">
             <p class="project-title">
@@ -151,13 +153,20 @@
               <span class="project-arrow" aria-hidden="true">↗</span>
             </p>
             <p class="project-desc">
-              An IoT greenhouse controller built on an ESP32. Monitors temperature,
-              humidity, and soil moisture — automatically managing irrigation and
-              ventilation without human intervention.
+              An IoT greenhouse controller built on an ESP32 that monitors temperature,
+              humidity, and irrigation. It manages operations automatically and features
+              data telemetry via MQTT. For this project, I aim to implement a HAL (Hardware Abstraction Layer)
+              for the circuit, allowing it to utilize a digital twin for unit testing and simulations.
+              It also incorporates version control and over-the-air (OTA) firmware updates.
             </p>
             <div class="project-tags">
               <span class="tag">ESP32</span>
-              <span class="tag">C++</span>
+              <span class="tag">C/C++</span>
+              <span class="tag">HAL</span>
+              <span class="tag">Platformio</span>
+              <span class="tag">ESP-IDF</span>
+              <span class="tag">Digital twin</span>
+              <span class="tag">GoogleTest</span>
               <span class="tag">IoT</span>
               <span class="tag">MQTT</span>
             </div>
@@ -166,21 +175,95 @@
 
         <a class="project-card" href="https://github.com/robertmoar/javaCalc" target="_blank" rel="noopener noreferrer" aria-label="Java Calculator project on GitHub">
           <div class="project-img">
-            <span class="project-img-icon" aria-hidden="true">⌗</span>
+            <!--<span class="project-img-icon" aria-hidden="true">⌗</span>-->
+            <img src="../img/calcul.png" alt="Java calculator">
           </div>
           <div class="project-content">
             <p class="project-title">
-              Calculator — Java
+              Calculator developed in Java
               <span class="project-arrow" aria-hidden="true">↗</span>
             </p>
             <p class="project-desc">
-              A calculator application built in Java. A foundational project
-              exploring object-oriented design, UI logic, and the fundamentals
-              of building desktop software from scratch.
+              A calculator application developed in Java. This was a practice
+              project following a tutorial to practically explore object-oriented programming concepts.
             </p>
             <div class="project-tags">
               <span class="tag">Java</span>
               <span class="tag">OOP</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="project-card" href="https://github.com/robertmoar/portfolio" target="_blank" rel="noopener noreferrer" aria-label="Proyecto Portfolio en GitHub">
+          <div class="project-img">
+            <!--<span class="project-img-icon" aria-hidden="true">⌗</span>-->
+            <img src="../img/logoRoPortafoli.png" alt="robert good vibes">
+          </div>
+          <div class="project-content">
+            <p class="project-title">
+              Portfolio good old Html/CSS
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </p>
+            <p class="project-desc">
+              A self-hosted portfolio built with HTML and CSS. Although
+              I find using frameworks like React practical, I opted to
+              build this portfolio with as few dependencies as possible,
+              with the help of Claude, to minimize server resource consumption.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Self-hosted</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="project-card" href="https://portfoliold.robertmora.dev/" target="_blank" rel="noopener noreferrer" aria-label="Proyecto Portfolio en GitHub">
+          <div class="project-img">
+            <!--<span class="project-img-icon" aria-hidden="true">⌗</span>-->
+            <img src="../img/portold.png" alt="screen shot old portfolio">
+          </div>
+          <div class="project-content">
+            <p class="project-title">
+              Portfolio old developed in React
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </p>
+            <p class="project-desc">
+              An old portfolio built with React.
+              This was my very first portfolio deployed
+              on Vercel and connected to a GitHub repository.
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="project-card" href="https://hotel.robertmora.dev/" target="_blank" rel="noopener noreferrer" aria-label="Proyecto Portfolio en GitHub">
+          <div class="project-img">
+            <!--<span class="project-img-icon" aria-hidden="true">⌗</span>-->
+            <img src="../img/jamaicahotel.png" alt="screen shot hotel website">
+          </div>
+          <div class="project-content">
+            <p class="project-title">
+              Hotel Jamaica, your perfect holidays
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </p>
+            <p class="project-desc">
+              A hotel booking and management search engine built in Go.
+              This project handles multiple room reservations and features
+              a private web-based dashboard for hotel management operations and users.
+              It utilizes a PostgreSQL database hosted on a self-hosted server.
+              The project was inspired by a desire to apply what I learned during
+              my vocational training (FP), put concepts into practice, and expand
+              my capabilities using AI as a teacher.
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">GO</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Self-hosted</span>
+              <span class="tag">Management</span>
             </div>
           </div>
         </a>
